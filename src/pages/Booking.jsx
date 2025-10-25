@@ -18,7 +18,7 @@ export default function Booking() {
     setStatus("Жіберілуде...");
 
     try {
-      const res = await fetch("http://localhost:4000/api/bookings", {
+      const res = await fetch("https://umra-backend-2.onrender.com/api/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),

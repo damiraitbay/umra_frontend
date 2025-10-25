@@ -15,7 +15,7 @@ export default function Contact() {
     setStatus("Жіберілуде...");
 
     try {
-      const res = await fetch("http://localhost:4000/api/messages", {
+      const res = await fetch("https://umra-backend-2.onrender.com/api/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
